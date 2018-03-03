@@ -20,6 +20,15 @@ class TasksController < ApplicationController
     render json: Task.all
   end
 
+  def update
+    task = Task.find(params[:id])
+    if task.update_attributes(task_params)
+      render json: Task.all, status: :ok
+    else
+      render json: {:errors => task.errors}, :status => 422
+    end
+  end
+
   private
 
   def task_params
