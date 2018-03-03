@@ -1,0 +1,44 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding: 50px;
+  background-color: #283235e8;
+  font-family: sans-serif;
+}
+#container {
+  display: flex;
+  justify-content: center;
+}
+.header{
+  margin-bottom: 10px;
+}
+.radio-inline{
+  margin-right: 5px;
+}
+.optradio{
+  margin-right: 5px;
+}
+.todoListMain .theList {
+  list-style: none;
+  padding-left: 0;
+  width: auto;
+}
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgba(145, 142, 173, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.button{
+  float: right;
+}
+.icon{
+  float: right;
+  margin-left: 5px;
+}
+.header-tt{
+  text-align: center;
+  font-size: 14px;
+}
